@@ -1,0 +1,29 @@
+- age dependency
+
+- gdp/sexes/equality
+- cost of healthcare/cost of living
+- employment data (unit!)
+
+Countries
+- NLD (Netherlands)
+- SWE (Sweden)
+- ESP (Spain)
+- CAD (Canada)
+- GBR (United Kingdom)
+- CHL (Chile)
+
+Datasets
+1. age dependency ratio (old) (J)
+2. age dependencay ratio (young) (J)
+3. GDP (S)
+4. cost of healthcare (S)
+5. cost of living (S)
+6. population (P)
+7. life expectancy (P)
+8. GINI (P)
+
+Planning
+Philip: countries with good data
+Mees: background (why these datasets)
+Jason: countries with good data
+Siemon: countries with good data
