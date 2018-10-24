@@ -16,8 +16,8 @@ Datasets
 1. age dependency ratio (old) (J)
 2. age dependencay ratio (young) (J)
 3. GDP (S)
-4. cost of healthcare (S)
-5. cost of living (S)
+4. cost of healthcare (S) - doesn't exist in World bank data
+5. cost of living (S) - doesn't exist in World bank data
 6. population (P)
 7. life expectancy (P)
 8. GINI (P)
