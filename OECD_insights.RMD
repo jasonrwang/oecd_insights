@@ -1,1 +1,68 @@
 ## Just starting a file for us to keep track of stuff in...
+
+# OECD_insights
+This is for EPA1315.
+
+### Authors
+* Get from other project we did.
+
+## Executive Summary
+
+## Problem Understanding
+_What is the problem? Who is the client? (This might be provided)_ - Mees already wrote an introduction.
+
+The client has asked us to look into ...
+
+[Need 'compelling' visualization]
+
+1. Show age dependency trends
+2. Links to articles to show that OECD/governments have indeed identified this as a problem
+3. What are stress criteria?
+
+#### *Research Question*: Will increasing the age-dependency ratio increase the stress on a society?
+
+### Methodology(?)
+ _the human capital sustainability of a society_, which is based on the following specific indicators:
+* One
+* Two
+* Three
+...
+
+## Data Understanding
+
+_Use tables in the sections below to introduce and discuss each of the criteria + age dependency we are examining._
+
+### Collection
+
+### Description
+
+### Quality Discussion
+
+### Exploratory Analysis
+
+*Answer the question*: 'Identify the data relevant to the research questions.'
+
+## Data Preparation
+
+### Dataset + Dataset Description
+
+* Show head of each dataset (or some samples, since many are similar
+* How we did our cleaning
+* Why we only picked ~50 countries to analyze (we didn't have clean data for everyone)
+    ** Why certain countries were more interesting than others (what are the OECD's goals?)
+
+## Modelling
+This should include
+* Define a descriptive model for the relevant data
+* Specify a prior distribution on the parameters
+* Use Bayesian inferenc eto re-allocate credibility across parameter values
+
+### Test Design
+
+### Models
+
+### Parameter sections 
+
+### Model Description
+
+### Assessment
