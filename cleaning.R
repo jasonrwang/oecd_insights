@@ -1,7 +1,7 @@
 library(reshape)
 
 # Read the data in correctly
-mydata_utf8 = read.table("data/WDIData.csv",sep=",",fileEncoding="UTF-8-BOM",header=TRUE)
+mydata_utf8 = read.table("data/data.csv",sep=",",fileEncoding="UTF-8-BOM",header=TRUE)
 
 # drop off the final blank column
 mydata = mydata_utf8[,1:62]
