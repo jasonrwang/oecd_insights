@@ -11,7 +11,7 @@ life_expectency_birth <- read.csv("data/API_SP.DYN.LE00.IN_DS2_en_csv_v2_1018129
 total_popuation <- read.csv("data/API_SP.POP.TOTL_DS2_en_csv_v2_10203548.csv",sep=',',header=TRUE,skip=4)
 
 #create a list of all the names of the dataframes and the generic header names we want
-list_of_data_frames <- c('age_dependency_old','age_dependency_young','age_dependency_ratio','GDP','health_expenditure_capita','health_expenditure','household_consumption')
+str_of_dataframes <- c('age_dependency_old','age_dependency_young','age_dependency_ratio','GDP','health_expenditure_capita','health_expenditure','household_consumption','GINI','life_expectency_birth','total_popuation')
 header_names <- c('Country_Name', 'Country_Code', 'Indicator_Name','Indicator_Code',1960:2017)
 
 CDF <- function(D) {
@@ -21,8 +21,6 @@ CDF <- function(D) {
 }
 
 #walk through the list and change it according to the function
-for (i in 1:length(list_of_data_frames)) {
-    assign(list_of_data_frames[i], CDF(get(list_of_data_frames[i])))
+for (i in 1:length(str_of_dataframes)) {
+    assign(str_of_dataframes[i], CDF(get(str_of_dataframes[i])))
 }
-
-# View(age_dependency_old)
