@@ -1,7 +1,0 @@
-age_dependency_old <- read.csv("data/Age_dependency_old(working_age_population).csv",sep=',',header=TRUE,skip=4)
-age_dependency_young <- read.csv("data/Age_dependency_young(working_age_population).csv",sep=',',header=TRUE,skip=4)
-age_dependency_ratio <- read.csv("data/Age_dependency_ratio(working_age_population).csv",sep=',',header=TRUE,skip=4)
-GDP <- read.csv("data/GDP(US).csv",sep=',',header=TRUE,skip=4)
-health_expenditure_capita <- read.csv("data/Health_expenditure_capita(US).csv",sep=',',header=TRUE,skip=4)
-health_expenditure <- read.csv("data/Health_expenditure(GDP).csv",sep=',',header=TRUE,skip=4)
-houshold consumption <- read.csv("data/household_consumption(US)).csv",sep=',',header=TRUE,skip=4)
