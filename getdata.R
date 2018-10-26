@@ -6,6 +6,9 @@ GDP <- read.csv("data/API_NY.GDP.MKTP.CD_DS2_en_csv_v2_10203569.csv",sep=',',hea
 health_expenditure_capita <- read.csv("data/API_SH.XPD.EHEX.PC.CD_DS2_en_csv_v2_10203894.csv",sep=',',header=TRUE,skip=4)
 health_expenditure <- read.csv("data/API_SH.XPD.CHEX.GD.ZS_DS2_en_csv_v2_10183765.csv",sep=',',header=TRUE,skip=4)
 household_consumption <- read.csv("data/API_NE.CON.PRVT.CD_DS2_en_csv_v2_10184156.csv",sep=',',header=TRUE,skip=4)
+GINI <- read.csv("data/API_SI.POV.GINI_DS2_en_csv_v2_10181010.csv",sep=',',header=TRUE,skip=4)
+life_expectency_birth <- read.csv("data/API_SP.DYN.LE00.IN_DS2_en_csv_v2_10181296.csv",sep=',',header=TRUE,skip=4)
+total_popuation <- read.csv("data/API_SP.POP.TOTL_DS2_en_csv_v2_10203548.csv",sep=',',header=TRUE,skip=4)
 
 #create a list of all the names of the dataframes and the generic header names we want
 list_of_data_frames <- c('age_dependency_old','age_dependency_young','age_dependency_ratio','GDP','health_expenditure_capita','health_expenditure','household_consumption')
