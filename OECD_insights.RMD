@@ -1,5 +1,3 @@
-## Just starting a file for us to keep track of stuff in...
-
 # OECD_insights
 This is for EPA1315.
 
@@ -134,6 +132,23 @@ The Gini index represents the income or wealth distribution of a nation’s resi
 
 _Use tables in the sections below to introduce and discuss each of the criteria + age dependency we are examining._
 
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
 ### Collection
 
 ### Description
@@ -148,7 +163,7 @@ _Use tables in the sections below to introduce and discuss each of the criteria 
 
 ### Dataset + Dataset Description
 
-* Show head of each dataset (or some samples, since many are similar
+* Show head of each dataset (or some samples, since many are similar)
 * How we did our cleaning
 * Why we only picked ~50 countries to analyze (we didn't have clean data for everyone)
     ** Why certain countries were more interesting than others (what are the OECD's goals?)
@@ -170,4 +185,11 @@ This should include
 ### Assessment
 
 
-### References
+## References
+
+## Appendix
+
+### The General Data Cleaning Procedure
+We were inspired by this, which Philip found at [website name](https://url).
+
+![Data Processing Workflow](https://i.imgur.com/sIfLdkW.jpg)
