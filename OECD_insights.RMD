@@ -11,11 +11,11 @@ _What is the problem? Who is the client? (This might be provided)_ - Mees alread
 
 ### Age dependency ratio
 
-The age dependency ratio is the ratio between the number of people in the labour force, and the number of people that are not. For further analysis, this ratio can be divided in old-age dependency ratio and young-age dependency ratio. The old-age ratio refers to the number of people that have reached the age of retirement (65+). The young-age dependency ratio refers to the number of people, that are too younger than 15.  (United Nations, 2005). 
+The age dependency ratio is the ratio between the number of people in the labour force, and the number of people that are not. For further analysis, this ratio can be divided in old-age dependency ratio and young-age dependency ratio. The old-age ratio refers to the number of people that have reached the age of retirement (65+). The young-age dependency ratio refers to the number of people, that are too younger than 15.  (United Nations, 2005).
 
 ### Issues
 
-Age dependency ratios are used to indicate potential effects of change in the population age structures. These effects are mainly related to social and economic development, that point out broad trends in social support needs. In general, a higher dependency rate tends to increase financial stress between working people and dependents. It can cause serious problems if large proportions of governmental spending are related to social security, health and education, since these are most used by the dependents (both old and young). The fewer people in the working age, the fewer can support the costs related to the dependents. 
+Age dependency ratios are used to indicate potential effects of change in the population age structures. These effects are mainly related to social and economic development, that point out broad trends in social support needs. In general, a higher dependency rate tends to increase financial stress between working people and dependents. It can cause serious problems if large proportions of governmental spending are related to social security, health and education, since these are most used by the dependents (both old and young). The fewer people in the working age, the fewer can support the costs related to the dependents.
 
 
 ### Limitations
@@ -25,9 +25,9 @@ The definition of age dependency ratio ignores some significant facts. Firstly, 
 
 ### Trends
 
-The life expectancy of people all over the world has significantly increased over the past decades. This increase can be explained by a number of reasons, but most importantly it is due three reasons. These reasons are better food production and distribution, improvement in public health and better medical technology [1]. According to a study in 188 countries, in the last two decades the life expectancy is especially increased due to lower death rates caused by infectious and cardiovascular diseases [2]. 
+The life expectancy of people all over the world has significantly increased over the past decades. This increase can be explained by a number of reasons, but most importantly it is due three reasons. These reasons are better food production and distribution, improvement in public health and better medical technology [1]. According to a study in 188 countries, in the last two decades the life expectancy is especially increased due to lower death rates caused by infectious and cardiovascular diseases [2].
 
-Unlike the life expectancy, age of retirement did not change much in most countries. This has as direct consequence that the age dependency ratio has decreased over the past decades. In figure 1 the age dependency of the world is depicted over the period from 1960 until 2017 (World Data Bank, 2017). It can be seen that global age dependency decreased from approximately 75% towards 54%. 
+Unlike the life expectancy, age of retirement did not change much in most countries. This has as direct consequence that the age dependency ratio has decreased over the past decades. In figure 1 the age dependency of the world is depicted over the period from 1960 until 2017 (World Data Bank, 2017). It can be seen that global age dependency decreased from approximately 75% towards 54%.
 
 ! [Global Age Dependency Ratio](Picture)
 
@@ -36,7 +36,7 @@ To further analyse the ongoing trend of age dependency over the past years, in f
 ! [Age Dependency Ratio 1960] (picture)
 ! [Age Dependency Ratio 2017] (picture)
 
-*Note: The colours of both pictures relate to different ratios, since the global distribution of age dependency was completely different in 1960, compared to 2017. 
+*Note: The colours of both pictures relate to different ratios, since the global distribution of age dependency was completely different in 1960, compared to 2017.
 
 Lastly, figure 4 provides a prediction for the number of old-age dependent people over the world for the coming decades. A distinction is made for more developed regions, less developed regions and least developed countries (United Nations, 2015).
 
@@ -60,11 +60,11 @@ For these reasons, the request for this report was made. The main research quest
 
 ‘Will an increasing age-dependency ratio increase the stress on a society?’
 
-This research question aims to relate the age-dependency ratio, both young and old, on several criteria for stress on a society. For each of the criteria a hypothesis is set, and in some cases an indicator is defined. In this report the criteria for stress are: 
+This research question aims to relate the age-dependency ratio, both young and old, on several criteria for stress on a society. For each of the criteria a hypothesis is set, and in some cases an indicator is defined. In this report the criteria for stress are:
 
 1.	Life Expectancy
 
-Life expectancy is defined as the age a person is expected to reach, measured from its moment of birth. For this definition it is assumed that mortality rates at reach age remain constant. This variable is chosen, since it is believed to be the cause of many of the problems related to the increase of the age dependency ratio. 
+Life expectancy is defined as the age a person is expected to reach, measured from its moment of birth. For this definition it is assumed that mortality rates at reach age remain constant. This variable is chosen, since it is believed to be the cause of many of the problems related to the increase of the age dependency ratio.
 
 [Hypothesis 1: Life expectancy is positively related to an increase in the age dependency ratio]
 
@@ -78,7 +78,7 @@ Indicator: Cost of healthcare is measured as the average cost of healthcare per 
 
 3.	Cost of Living
 
-This variable is chosen because cost of living is considered an economic indicator relevant to our problem. It also is believed to increase financial stress on a society. For instance, a high cost of living an indicator that a further increase of costs may be problematic. 
+This variable is chosen because cost of living is considered an economic indicator relevant to our problem. It also is believed to increase financial stress on a society. For instance, a high cost of living an indicator that a further increase of costs may be problematic.
 
 Indicator: Cost of living is measured as the minimum amount of money that is needed for a certain standard of living ($ per person per year)
 
@@ -141,7 +141,7 @@ Colons can be used to align columns.
 | zebra stripes | are neat      |    $1 |
 
 There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
+The outer pipes (|) are optional, and you don't need to make the
 raw Markdown line up prettily. You can also use inline Markdown.
 
 Markdown | Less | Pretty
@@ -150,6 +150,8 @@ Markdown | Less | Pretty
 1 | 2 | 3
 
 ### Collection
+
+The data is collected from the world bank site. This site gives access to open data, which can be downloaded as a csv file. With the following reddit code the different files are made into a database. After that they're all given the same header and cleaned up a bit. Only the country files are saved and empty columns are cleared.
 
 ### Description
 
@@ -178,7 +180,7 @@ This should include
 
 ### Models
 
-### Parameter sections 
+### Parameter sections
 
 ### Model Description
 
