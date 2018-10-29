@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### This script plots correlations between the age dependency ratio and other indicators
 
 # These are the indicators we are concerned about
@@ -19,3 +20,8 @@ for (indicator in indicatorsVect) { # Ignore the three age dependency indicators
     plot(unlist(AllInds_cast['SP.POP.DPND']),unlist(AllInds_cast[indicator]))
 }
 
+=======
+## This script plots correlations between the age dependency ratio and other indicators
+
+plot()
+>>>>>>> ef7d6a5e26fea4afcab0d1e992dc86a6e3ef7672
