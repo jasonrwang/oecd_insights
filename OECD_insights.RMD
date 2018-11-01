@@ -1,1 +1,195 @@
-## Just starting a file for us to keep track of stuff in...
+# OECD_insights
+This is for EPA1315.
+
+### Authors
+* Get from other project we did.
+
+## Executive Summary
+
+## Problem Understanding
+_What is the problem? Who is the client? (This might be provided)_ - Mees already wrote an introduction.
+
+### Age dependency ratio
+
+The age dependency ratio is the ratio between the number of people in the labour force, and the number of people that are not. For further analysis, this ratio can be divided in old-age dependency ratio and young-age dependency ratio. The old-age ratio refers to the number of people that have reached the age of retirement (65+). The young-age dependency ratio refers to the number of people, that are too younger than 15.  (United Nations, 2005). 
+
+### Issues
+
+Age dependency ratios are used to indicate potential effects of change in the population age structures. These effects are mainly related to social and economic development, that point out broad trends in social support needs. In general, a higher dependency rate tends to increase financial stress between working people and dependents. It can cause serious problems if large proportions of governmental spending are related to social security, health and education, since these are most used by the dependents (both old and young). The fewer people in the working age, the fewer can support the costs related to the dependents. 
+
+
+### Limitations
+
+The definition of age dependency ratio ignores some significant facts. Firstly, people above the age of 65 are not necessarily dependent, since an increasing part of them is working nowadays. Also, people in the working age are not all working. People stay out of work for a number of reasons. First and foremost, some people are simply unemployed.  Also, people that follow education for a longer amount of time have a disturbing impact on the reliability of this definition.
+
+
+### Trends
+
+The life expectancy of people all over the world has significantly increased over the past decades. This increase can be explained by a number of reasons, but most importantly it is due three reasons. These reasons are better food production and distribution, improvement in public health and better medical technology [1]. According to a study in 188 countries, in the last two decades the life expectancy is especially increased due to lower death rates caused by infectious and cardiovascular diseases [2]. 
+
+Unlike the life expectancy, age of retirement did not change much in most countries. This has as direct consequence that the age dependency ratio has decreased over the past decades. In figure 1 the age dependency of the world is depicted over the period from 1960 until 2017 (World Data Bank, 2017). It can be seen that global age dependency decreased from approximately 75% towards 54%. 
+
+! [Global Age Dependency Ratio](Picture)
+
+To further analyse the ongoing trend of age dependency over the past years, in figure 2 a map of the age dependency per country in 1960 is given. In figure 3 these data can be compared to the numbers of age dependency in 2017. The difference becomes most evident by comparing the legends of both maps. (World Data Bank, 2017)
+
+! [Age Dependency Ratio 1960] (picture)
+! [Age Dependency Ratio 2017] (picture)
+
+*Note: The colours of both pictures relate to different ratios, since the global distribution of age dependency was completely different in 1960, compared to 2017. 
+
+Lastly, figure 4 provides a prediction for the number of old-age dependent people over the world for the coming decades. A distinction is made for more developed regions, less developed regions and least developed countries (United Nations, 2015).
+
+! [Population aged 60-79 years and aged 80 years or over by development group, 2000, 2015, 2030 and 2050] (picture)
+
+Policy Actualities
+
+Nowadays approximately 20% of the people in Europe is aged over 65, which is a record high.
+This increase in life expectancy and its impact on the age dependency ratio has caused discussions about the age of retirement. In the countries that are part of the Organisation for Economic Co-operation and Development (OECD), men retire at an average age of 65, for women this is 63.5 [3].
+In 2013 the Dutch government, for instance, decided to start increasing the age of retirement periodically [4], but not only in Europe this discussion is ongoing. The prime minister of Canada decided in 2016 to keep the retirement age at 65, but the plan to increase retirement age is still on the agenda [5].
+
+
+Relevance for Organisation for Economic Co-operation and Development (OECD)
+
+This subject is of particular interest to the strategic counsellor of the OECD for a number of reasons. Firstly, the increase of life expectancy is especially relevant in the member states of this organization, since these are mostly more developed countries (figure 4). Also, the economic consequences are highly relevant towards the OECD, since its main interest is economic development. Lastly, the OECD has stated its interest in the 7 societal challenges set by the UN. This problem is part of the Health and Demographic Change & Wellbeing challenge. The fact that the topic of ageing is explicitly mentioned in the global issue report of the United Nations, strengthen this statement [6].
+
+For these reasons, the request for this report was made. The main research question is:
+
+
+
+
+‘Will an increasing age-dependency ratio increase the stress on a society?’
+
+This research question aims to relate the age-dependency ratio, both young and old, on several criteria for stress on a society. For each of the criteria a hypothesis is set, and in some cases an indicator is defined. In this report the criteria for stress are: 
+
+1.	Life Expectancy
+
+Life expectancy is defined as the age a person is expected to reach, measured from its moment of birth. For this definition it is assumed that mortality rates at reach age remain constant. This variable is chosen, since it is believed to be the cause of many of the problems related to the increase of the age dependency ratio. 
+
+[Hypothesis 1: Life expectancy is positively related to an increase in the age dependency ratio]
+
+2.	Cost of Healthcare
+
+This criterium is chosen because it related to an increase in cost for the supporting part of society. For this reason, it can be considered a contributing factor towards stress on society. Reasons for this fact are for instance higher probability on chronic diseases such as Alzheimer of Dementia, but also increase chance on cancer or heart problems. Another contributing factor is the number of people in nursing houses or assisted living centres.
+
+Indicator: Cost of healthcare is measured as the average cost of healthcare per person in a country ($ per person per year).
+
+[Hypothesis 2: Cost of healthcare is positively related to an increase in the age dependency ratio]
+
+3.	Cost of Living
+
+This variable is chosen because cost of living is considered an economic indicator relevant to our problem. It also is believed to increase financial stress on a society. For instance, a high cost of living an indicator that a further increase of costs may be problematic. 
+
+Indicator: Cost of living is measured as the minimum amount of money that is needed for a certain standard of living ($ per person per year)
+
+[Hypothesis 3: Cost of living is positively related to an increase in the age dependency ratio]
+
+4.	Population
+
+This variable is included to be able to relate to other variables such as GDP and its relation towards age dependency. A direct link towards stress is not observed.
+
+Indicator: Number of people living in a country
+
+[Hypothesis 4: The population is positively related towards an increase in the age dependency ratio]
+
+
+5.	Economic Performance
+
+Economic performance is chosen because a country that is doing well economically, is expected to be less vulnerable towards stress.
+
+Indicator: Gross domestic product ($ per year)
+
+The gross domestic product is a measure of total market value is a country. Nominal GDP is chosen, because this is regularly considered a suitable indicator of economic performance.
+
+[Hypothesis 5: Economic performance is negatively related towards the age dependency ratio]
+
+6.	Income inequality
+
+Income inequality is chosen because of its relevance towards the economic situation is a country. It is an indication of differences between people is a country, also in terms of stress.
+
+Indicator: Gini Index (%)
+
+The Gini index represents the income or wealth distribution of a nation’s residents.
+
+[Hypothesis 6: Income inequality has no significant relation towards the age dependency ratio.
+
+
+
+
+
+
+
+#### *Research Question*: Will increasing the age-dependency ratio increase the stress on a society?
+
+### Methodology(?)
+ _the human capital sustainability of a society_, which is based on the following specific indicators:
+* One
+* Two
+* Three
+...
+
+## Data Understanding
+
+_Use tables in the sections below to introduce and discuss each of the criteria + age dependency we are examining._
+
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+### Collection
+
+### Description
+
+### Quality Discussion
+
+### Exploratory Analysis
+
+*Answer the question*: 'Identify the data relevant to the research questions.'
+
+## Data Preparation
+
+### Dataset + Dataset Description
+
+* Show head of each dataset (or some samples, since many are similar)
+* How we did our cleaning
+* Why we only picked ~50 countries to analyze (we didn't have clean data for everyone)
+    ** Why certain countries were more interesting than others (what are the OECD's goals?)
+
+## Modelling
+This should include
+* Define a descriptive model for the relevant data
+* Specify a prior distribution on the parameters
+* Use Bayesian inferenc eto re-allocate credibility across parameter values
+
+### Test Design
+
+### Models
+
+### Parameter sections 
+
+### Model Description
+
+### Assessment
+
+
+## References
+
+## Appendix
+
+### The General Data Cleaning Procedure
+We were inspired by this, which Philip found at [website name](https://url).
+
+![Data Processing Workflow](https://i.imgur.com/sIfLdkW.jpg)
