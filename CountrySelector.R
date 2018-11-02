@@ -10,7 +10,7 @@ CountrySelector <- function(...) {
   return(CountryList)
 }
 
-setwd("~/Dropbox (Personal)/EPA/EPA1315-Data analytics and visualization/oecd_insights")
+# setwd("~/Dropbox (Personal)/EPA/EPA1315-Data analytics and visualization/oecd_insights")
 
 GINI = read.csv(file = "GINI_index.csv", sep = ",", header = TRUE)
 LIFE_EXP = read.csv(file = "Life_expectancy_at_birth.csv", sep = ",", header = TRUE)
