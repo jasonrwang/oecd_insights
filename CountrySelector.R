@@ -9,12 +9,3 @@ CountrySelector <- function(...) {
   CountryList <- list(head(l5$Group.1, 50))  # List 50 countries with lowest NA-value counts
   return(CountryList)
 }
-
-setwd("~/Dropbox (Personal)/EPA/EPA1315-Data analytics and visualization/oecd_insights")
-
-GINI = read.csv(file = "GINI_index.csv", sep = ",", header = TRUE)
-LIFE_EXP = read.csv(file = "Life_expectancy_at_birth.csv", sep = ",", header = TRUE)
-POP = read.csv(file = "Total_population.csv", sep = ",", header = TRUE)
-
-a <- CountrySelector(POP, LIFE_EXP)
-a
