@@ -18,7 +18,8 @@ The full version of this work is [hosted on GitHub](https://github.com/jasonrwan
 
 ## Executive Summary
 
-
+### Grading rubric
+Follow DRISP DM process!!
 ## Problem Understanding
 Scott: A problem is compellingly described Both data and graphics are compellingly used.
 
@@ -33,8 +34,16 @@ Scott: The model selected is strongly motivated and additional insight is provid
 
 ## Reporting
 Scott: The report invites clear next steps for additional analysis or decision-making.
+###
 
 
+## Introduction
+- Mees
+
+## Problem Understanding
+- Mees
+
+# Old text, still up to date? - Mees
 ## Problem Understanding
 _What is the problem? Who is the client? (This might be provided)_ - Mees already wrote an introduction.
 
@@ -141,7 +150,7 @@ Indicator: Gini Index (%)
 The Gini index represents the income or wealth distribution of a nation’s residents.
 
 [Hypothesis 6: Income inequality has no significant relation towards the age dependency ratio.
-
+### End old text - Mees
 
 
 
@@ -151,57 +160,164 @@ The Gini index represents the income or wealth distribution of a nation’s resi
 #### *Research Question*: Will increasing the age-dependency ratio increase the stress on a society?
 
 ### Methodology
-The methodology used in this project is the waterfall development. Before going to the next part of the project the activity before has to be finished within reason. The documentation is not included.
+This project is created following the Cross-industry standard process for data mining (DRISP-DM). This process starts with understanding the business, whith help of data understanding. This understanding helps to make sound decisions on how to prepare the data. During which the modeling will be done, which bepends on the acquired data. After the modeling, there's an evaluation which might lead to changes in business understanding. Eventually deployment follows evaluation.
 
-The stress on a society will be viewed as the burden on the workforce of people who are older than 65. The stress can be viewed in the GDP per capita, healtcare costs, and the age dependency young (burden on the workforce of people younger than 65).
+#Inserct picture of DRISP-DM overview
 
 ## Data Understanding
+The acquired data comes from the world bank. All this data has the same template. The first four columns are about the countries and the indicator, every indicator has it's own file. What each indicator is, is already discussed in the chapter about problem understanding. A short version of the selected criteria will be presented below.
 
-_Use tables in the sections below to introduce and discuss each of the criteria + age dependency we are examining._
-
-Colons can be used to align columns.
 
 | Criteria      | Description           | Possible relation  |
 | ------------- |:-------------:| -----:|
-| Age dependency old    | right-aligned | $1600 |
-| Age dependency young      | centered      |   $12 |
-| GDP per capita | are neat      |    $1 |
-| Healtcare expenditure |
+| Age dependency old    | People over the age of 65 as percentage of the labour force |  |
+| Age dependency young      | People under the age of 15 as percentage of the labour force      |   If there are a lot of young people now, at some point they will be 65+, thus increasing age dependency old (as seen by the babyboom generation) |
+| GDP per capita | Gross domestic product devided by the number of people in the country      | If there are more people spending more money, the GDP will rise. Older people have in general more to spend than younger people |
+| Healtcare expenditure | Expenditure as percentage of GDP | Older people need in general more healtcare, thus the expenditures might rise |
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-### Collection
-
-The data is collected from the world bank site. This site gives access to open data, which can be downloaded as a csv file. With the following reddit code the different files are made into a database. After that they're all given the same header and cleaned up a bit. Only the country files are saved and empty columns are cleared.
-Before a selection was made which parameters to include, similar data was acquired. After some initial exploration some data was dropped.
-
-### Description
-
-The data is devided into deferent dataframes. Every dataframe has one country per row. However, among the countries there are also aggregated areas, like the arab world. The first for columns are the name of the country, the abbreviation of the country, the indicator name, and the indicator code. Thereafter ever year between 1960 and 2017 has a seperate column.
 
 ### Quality Discussion
 
-The quality of the data was less than expected. There were a lot of missing values, even up until the last couple of years. This has great influences on the research done and the gotten conclusion.
+The quality of the data will be set on how much data is missing. Data might be missing if the data wasn't recorded or wasn't complete. After looking through the dataframes, it became clear that only for the last couple of years a lot of data was gathered. Before the turn of the century, the data was very limited. Specially the last three years, the amount of data was much better than at the start of the recording of data.
+
+Because missing data is excluded from the research, they have influence on the conclusion. The conclusion might not be correct for the missing countries. There might even be a correlation between the countries that miss data and which data is gathered, but that's research for another time.
 
 ### Exploratory Analysis
 
-*Answer the question*: 'Identify the data relevant to the research questions.'
+After the initial data was found, it became clear that not all data was relevant for the research question. Only the aformentioned data was used. The main reason for dropping data was that it wasn't very well conected with age dependancy old, or the unit of measurement could be improved by using another dataset.
 
 ## Data Preparation
 
 ### Dataset + Dataset Description
 
-* Show head of each dataset (or some samples, since many are similar)
-* How we did our cleaning
-* Why we only picked ~50 countries to analyze (we didn't have clean data for everyone)
-    ** Why certain countries were more interesting than others (what are the OECD's goals?)
+Every dataset as initially headers which are replaced during cleaning for easier reference later on. This is the code for importing and cleaning the data.
+
+```{R}
+## This file imports and cleans the data for all the variables and indicators we aim to examine.
+## It then considates all of the data in one dataframe with rows sep
+
+library(reshape)
+
+# Import data, which is all from the World Bank Indicators database
+age_dependency_old <- read.csv("data/API_SP.POP.DPND.OL_DS2_en_csv_v2_10184911.csv",sep=',',header=TRUE,skip=4)
+age_dependency_young <- read.csv("data/API_SP.POP.DPND.YG_DS2_en_csv_v2_10199819.csv",sep=',',header=TRUE,skip=4)
+age_dependency_ratio <- read.csv("data/API_SP.POP.DPND_DS2_en_csv_v2_10188478.csv",sep=',',header=TRUE,skip=4)
+GDP <- read.csv("data/API_NY.GDP.MKTP.CD_DS2_en_csv_v2_10203569.csv",sep=',',header=TRUE,skip=4)
+health_expenditure_capita <- read.csv("data/API_SH.XPD.EHEX.PC.CD_DS2_en_csv_v2_10203894.csv",sep=',',header=TRUE,skip=4)
+health_expenditure <- read.csv("data/API_SH.XPD.CHEX.GD.ZS_DS2_en_csv_v2_10183765.csv",sep=',',header=TRUE,skip=4)
+household_consumption <- read.csv("data/API_NE.CON.PRVT.CD_DS2_en_csv_v2_10184156.csv",sep=',',header=TRUE,skip=4)
+GINI <- read.csv("data/API_SI.POV.GINI_DS2_en_csv_v2_10181010.csv",sep=',',header=TRUE,skip=4)
+life_expectency_birth <- read.csv("data/API_SP.DYN.LE00.IN_DS2_en_csv_v2_10181296.csv",sep=',',header=TRUE,skip=4)
+total_popuation <- read.csv("data/API_SP.POP.TOTL_DS2_en_csv_v2_10203548.csv",sep=',',header=TRUE,skip=4)
+GDP_per_capita <- read.csv("data/API_NY.GDP.PCAP.CD_DS2_en_csv_v2_10181232.csv",sep=',',header=TRUE,skip=4)
+
+# View(head(age_dependency_old))
+
+#create a list of all the names of the dataframes and the generic header names we want
+str_of_dataframes <- c('age_dependency_old','age_dependency_young','GDP','household_consumption','GDP_per_capita','age_dependency_ratio','health_expenditure_capita','health_expenditure','GINI','life_expectency_birth','total_popuation')
+header_names <- c('Country_Name', 'Country_Code', 'Indicator_Name','Indicator_Code',1960:2017)
+
+country_code <- read.csv("data/Metadata_Country.csv",sep=",",header=TRUE,skip=0)
+colnames(country_code)[1] <-"CountryCode" #change the name of the first row
+country_code <- country_code[!(country_code$Region == ""), ] #keep only countries and skip aggregated inputs
+
+CleanDataFrame <- function(D) {
+    D[length(D)] <- NULL #delete the last column, it is empty
+    colnames(D) <- header_names #change the headernames to be the same
+    return(D)
+}
+
+OnlyCountries <- function(D) {
+    D <- subset(D,D$Country_Code %in% country_code$CountryCode)
+    return(D)
+}
+
+#walk through the list and change it according to the function
+for (i in 1:length(str_of_dataframes)) {
+    assign(str_of_dataframes[i], CleanDataFrame(get(str_of_dataframes[i])))
+    assign(str_of_dataframes[i], OnlyCountries(get(str_of_dataframes[i])))
+
+}
+
+# Combine all indicators into one DataFrame
+AllInds = data.frame()
+
+for (indicator in str_of_dataframes) {
+    # print(names(get(indicator)))
+    AllInds = rbind(AllInds, get(indicator))
+}
+
+# Reshape the combined DataFrame
+
+AllInds_melted = melt(AllInds, id = c('Country_Name','Country_Code','Indicator_Name','Indicator_Code'), variable_name='Year')
+AllInds_cast = cast(AllInds_melted, Country_Name + Year ~ Indicator_Code)
+
+```
+
+After the data is cleaned, it isn't yet ready for further use. It should first be normalized and pasted together. That is done in the following block of code.
+
+
+```{R}
+library(gclus)
+library(rlist)
+
+Reshape <- function(which_year, dataframe) {
+    keeps <- c("Country_Name", as.character(which_year))
+    dataframe <- dataframe[, keeps, drop = FALSE]
+    dataframe <- reshape(dataframe, direction = "long", varying = list(names(dataframe)[2]), v.names = str_of_dataframes[i],
+                 idvar = c("Country.Name"), timevar = "Year", times = as.character(which_year))
+}
+
+var_names <- paste("df", 1:length(str_of_dataframes), sep = "")
+# p_all <- mget(var_names, envir = globalenv())
+
+for (i in 1:length(str_of_dataframes)) {
+    assign(var_names[i], Reshape(2015, get(str_of_dataframes[i])))
+}
+
+data <- get(var_names[1])
+for (i in 2:length(str_of_dataframes)) {
+    data <- Reduce(function(x, y) merge(x, y, all=TRUE), list(data, get(var_names[i])))
+}
+all_data <- data
+data <- data[complete.cases(data), ]
+
+# Normalize data
+normFunc <- function(x) {
+    (x-mean(x, na.rm = T))/sd(x, na.rm = T)
+}
+
+data[match(str_of_dataframes[1], names(data)):ncol(data)] <- apply(data[match(str_of_dataframes[1], names(data)):ncol(data)], 2, normFunc)
+
+# Create scatterplot matrix
+dta <- data[c(match(str_of_dataframes[1],names(data)):ncol(data))] # get data
+dta.r <- abs(cor(dta)) # get correlations
+dta.col <- dmat.color(dta.r) # get colors
+dta.o <- order.single(dta.r) # reorder variables so those with highest correlation are closest to the diagonal
+cpairs(dta, dta.o, panel.colors=dta.col, gap=.5,
+       main="Normalized Variables Ordered and Colored by Correlation" )
+
+
+```
+
+The function to select 50 countries was left out, because the year that was chosen has data for most countries, thus only the countries in the beginning of the alphabet would be selected.
+
+The function created to find these countries is given below, but isn't used.
+
+```{R, eval=F, echo=T}
+CountrySelector <- function(data) {
+  DataFrames <- list(data)  # list all dataframes fed to CountrySelector
+  l2 <- lapply(DataFrames, function(x) cbind(x, na_count = rowSums(is.na(x))))  # Add column with NA-value count per row
+  l3 <- Reduce(rbind, l2)  # Create one big dataframe
+  l4 <- aggregate(x = l3$na_count, by = list(l3$Country_Name), FUN = sum)  # Combined NA-value counts for all dataframes per country
+  l5 <- l4[order(l4$x),]  # Order ascending
+  CountryList <- list(head(l5$Group.1, 50))  # List 50 countries with lowest NA-value counts
+  return(CountryList)
+}
+
+selected_countries <- CountrySelector(all_data)
+
+```
 
 ## Modelling
 This should include
