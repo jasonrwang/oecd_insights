@@ -121,12 +121,10 @@ The Gini index represents the income or wealth distribution of a nation’s resi
 
 #### *Research Question*: Will increasing the age-dependency ratio increase the stress on a society?
 
-### Methodology(?)
- _the human capital sustainability of a society_, which is based on the following specific indicators:
-* One
-* Two
-* Three
-...
+### Methodology
+The methodology used in this project is the waterfall development. Before going to the next part of the project the activity before has to be finished within reason. The documentation is not included.
+
+The stress on a society will be viewed as the burden on the workforce of people who are older than 65. The stress can be viewed in the GDP per capita, healtcare costs, and the age dependency young (burden on the workforce of people younger than 65).
 
 ## Data Understanding
 
@@ -134,11 +132,12 @@ _Use tables in the sections below to introduce and discuss each of the criteria 
 
 Colons can be used to align columns.
 
-| Tables        | Are           | Cool  |
+| Criteria      | Description           | Possible relation  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Age dependency old    | right-aligned | $1600 |
+| Age dependency young      | centered      |   $12 |
+| GDP per capita | are neat      |    $1 |
+| Healtcare expenditure |
 
 There must be at least 3 dashes separating each header cell.
 The outer pipes (|) are optional, and you don't need to make the
@@ -156,6 +155,8 @@ The data is collected from the world bank site. This site gives access to open d
 ### Description
 
 ### Quality Discussion
+
+The quality of the data was less than expected. There were a lot of missing values, even up until the last couple of years. This has great influences on the research done and the gotten conclusion.
 
 ### Exploratory Analysis
 
