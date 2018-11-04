@@ -18,7 +18,6 @@ mu3[i] <- beta5 + beta6*age_dep_o[i]
 health_exp[i]   ~ dnorm(mu1[i],inv.var1)
 GDP_cap[i]   ~ dnorm(mu2[i],inv.var2)
 age_dep_y[i]   ~ dnorm(mu3[i],inv.var3)
-
 }
 
 # Prior for beta
@@ -49,7 +48,6 @@ sigma4     <- sqrt(var4)
 sigma5     <- sqrt(var5)
 sigma6     <- sqrt(var6)
 }"
-
 
 model <- jags.model(textConnection(model_string), data = list(age_dep_o=age_dep_o, health_exp=health_exp, GDP_cap=GDP_cap, age_dep_y=age_dep_y, n=n), n.chains = 4)
 
