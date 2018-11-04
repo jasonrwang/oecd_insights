@@ -1,12 +1,20 @@
 # OECD_insights
-This is for EPA1315.
 
-### Authors
-* Get from other project we did.
+This is the final project for the TU Delft - EPA1315 Data Analysis and Visualization course.
+
+The full version of this work is [hosted on GitHub](https://github.com/jasonrwang/oecd_insights/).
 
 ## Executive Summary
 
+### Authors
+
+* Mees Hoff – 4963059
+* Siemon Keij - 4285654
+* Philip Seijger - 4272803
+* Jason R Wang - 4788281
+
 ## Problem Understanding
+
 _What is the problem? Who is the client? (This might be provided)_ - Mees already wrote an introduction.
 
 ### Age dependency ratio
@@ -17,11 +25,9 @@ The age dependency ratio is the ratio between the number of people in the labour
 
 Age dependency ratios are used to indicate potential effects of change in the population age structures. These effects are mainly related to social and economic development, that point out broad trends in social support needs. In general, a higher dependency rate tends to increase financial stress between working people and dependents. It can cause serious problems if large proportions of governmental spending are related to social security, health and education, since these are most used by the dependents (both old and young). The fewer people in the working age, the fewer can support the costs related to the dependents.
 
-
 ### Limitations
 
 The definition of age dependency ratio ignores some significant facts. Firstly, people above the age of 65 are not necessarily dependent, since an increasing part of them is working nowadays. Also, people in the working age are not all working. People stay out of work for a number of reasons. First and foremost, some people are simply unemployed.  Also, people that follow education for a longer amount of time have a disturbing impact on the reliability of this definition.
-
 
 ### Trends
 
@@ -172,7 +178,8 @@ The quality of the data was less than expected. There were a lot of missing valu
     ** Why certain countries were more interesting than others (what are the OECD's goals?)
 
 ## Modelling
-This should include
+This should include:
+
 * Define a descriptive model for the relevant data
 * Specify a prior distribution on the parameters
 * Use Bayesian inferenc eto re-allocate credibility across parameter values
@@ -193,6 +200,7 @@ This should include
 ## Appendix
 
 ### The General Data Cleaning Procedure
+
 We were inspired by this, which Philip found at [website name](https://url).
 
 ![Data Processing Workflow](https://i.imgur.com/sIfLdkW.jpg)
