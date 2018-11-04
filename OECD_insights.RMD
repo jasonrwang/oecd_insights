@@ -1,10 +1,39 @@
-# OECD_insights
-This is for EPA1315.
+---
+title: "Inight in world bank data"
+output: html_document
+---
+
+# Fianl Project (TU Delft - EPA1315 Data Analysis and Visualization)
+
+## introduction
+
+The full version of this work is [hosted on GitHub](https://github.com/jasonrwang/OECD_insights).
 
 ### Authors
-* Get from other project we did.
+
+* Mees Hoff – 4963059
+* Siemon Keij - 4285654
+* Philip Seijger - 4272803
+* Jason R Wang - 4788281
 
 ## Executive Summary
+
+
+## Problem Understanding
+Scott: A problem is compellingly described Both data and graphics are compellingly used.
+
+## Graphics and Visuallization
+Scott: Multiple effective graphics are shown throughout the report
+
+## Data and Preparation
+Scott: Exceptional efforts were made to collect additional data or to fuse multiple data sets.
+
+## Analysis
+Scott: The model selected is strongly motivated and additional insight is provided
+
+## Reporting
+Scott: The report invites clear next steps for additional analysis or decision-making.
+
 
 ## Problem Understanding
 _What is the problem? Who is the client? (This might be provided)_ - Mees already wrote an introduction.
@@ -151,8 +180,11 @@ Markdown | Less | Pretty
 ### Collection
 
 The data is collected from the world bank site. This site gives access to open data, which can be downloaded as a csv file. With the following reddit code the different files are made into a database. After that they're all given the same header and cleaned up a bit. Only the country files are saved and empty columns are cleared.
+Before a selection was made which parameters to include, similar data was acquired. After some initial exploration some data was dropped.
 
 ### Description
+
+The data is devided into deferent dataframes. Every dataframe has one country per row. However, among the countries there are also aggregated areas, like the arab world. The first for columns are the name of the country, the abbreviation of the country, the indicator name, and the indicator code. Thereafter ever year between 1960 and 2017 has a seperate column.
 
 ### Quality Discussion
 
