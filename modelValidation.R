@@ -1,5 +1,7 @@
 ### This script takes the model outputs from `age_dependency_fork.RDS` and plots them against the original data
 
+# samp = readRDS('try_to_clean_up/fork.RDS') # This doesn't work for some reason
+
 output = summary(samp)$statistics
 
 # extract just the means
@@ -14,24 +16,24 @@ sigma2 = output[8,1] # SD for mu2
 sigma3 = output[9,1] # SD for mu3
 
 ## The below code could be improved significantly by using some kinda of looping logic...
-# for (i in 1:dim(df6.2)) {
+# for (i in 1:dim(total_NA)) {
 #    selected
 # }
 
 png(filename="figures/Age_vs_HealthExpend.png")
-plot(df1.2$age_dependency_old,df6.2$health_expenditure,col='red')
-mu1 <- beta1 + beta2*df1.2$age_dependency_old
-lines(df1.2$age_dependency_old,mu1,col='green')
+plot(total_NA$age_dependency_old,total_NA$health_expenditure,col='red')
+mu1 <- beta1 + beta2*total_NA$age_dependency_old
+lines(total_NA$age_dependency_old,mu1,col='green')
 dev.off()
 
 png(filename="figures/Age_vs_GDP-cap.png")
-plot(df1.2$age_dependency_old,df4.2$GDP,col='red')
-mu2 <- beta3 + beta4*df1.2$age_dependency_old
-lines(df1.2$age_dependency_old,mu2,col='green')
+plot(total_NA$age_dependency_old,total_NA$GDP,col='red')
+mu2 <- beta3 + beta4*total_NA$age_dependency_old
+lines(total_NA$age_dependency_old,mu2,col='green')
 dev.off()
 
 png(filename="figures/Age_vs_AgeY.png")
-plot(df1.2$age_dependency_old,df2.2$age_dependency_young,col='red')
-mu3 <- beta5 + beta6*df1.2$age_dependency_old
-lines(df1.2$age_dependency_old,mu3,col='green')
+plot(total_NA$age_dependency_old,total_NA$age_dependency_young,col='red')
+mu3 <- beta5 + beta6*total_NA$age_dependency_old
+lines(total_NA$age_dependency_old,mu3,col='green')
 dev.off()
