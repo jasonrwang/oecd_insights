@@ -1,4 +1,5 @@
-# Function to select 50 countries with fewest NA's across multiple dataframes
+## Function to select 50 countries with fewest NA's across multiple dataframes
+# Not yet linked to main.R – where else is it used?
 
 CountrySelector <- function(...) {
   DataFrames <- list(...)  # list all dataframes fed to CountrySelector

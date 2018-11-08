@@ -1,9 +1,7 @@
 
 library(gclus)
 
-setwd("/Users/philipseijger/Dropbox (Personal)/EPA/EPA1315-Data analytics and visualization/oecd_insights")
-
-# get data
+# Import data, which are all from the World Bank's Indicators database.
 age_dependency_old <- read.csv("data/API_SP.POP.DPND.OL_DS2_en_csv_v2_10184911.csv",sep=',',header=TRUE,skip=4)
 age_dependency_young <- read.csv("data/API_SP.POP.DPND.YG_DS2_en_csv_v2_10199819.csv",sep=',',header=TRUE,skip=4)
 age_dependency_ratio <- read.csv("data/API_SP.POP.DPND_DS2_en_csv_v2_10188478.csv",sep=',',header=TRUE,skip=4)
@@ -12,7 +10,6 @@ health_expenditure_capita <- read.csv("data/API_SH.XPD.EHEX.PC.CD_DS2_en_csv_v2_
 health_expenditure <- read.csv("data/API_SH.XPD.CHEX.GD.ZS_DS2_en_csv_v2_10183765.csv",sep=',',header=TRUE,skip=4)
 household_consumption <- read.csv("data/API_NE.CON.PRVT.CD_DS2_en_csv_v2_10184156.csv",sep=',',header=TRUE,skip=4)
 GDP_per_capita <- read.csv("data/API_NY.GDP.PCAP.CD_DS2_en_csv_v2_10181232.csv",sep=',',header=TRUE,skip=4)
-
 
 # dropping all year columns except 2015
 keeps <- c("Country.Name", "X2015")
@@ -25,7 +22,7 @@ df6 <- health_expenditure[ , keeps, drop = FALSE]
 df7 <- household_consumption[ , keeps, drop = FALSE]
 df8 <- GDP_per_capita[ , keeps, drop = FALSE]
 
-# reshape dataframes from wide to long format
+# reshape dataframes from wide to long format <-- there must be a way to automate this...
 df1.2 <- reshape(df1, direction = "long", varying = list(names(df1)[2]), v.names = "age_dependency_old", 
                  idvar = c("Country.Name"), timevar = "Year", times = 2015)
 df2.2 <- reshape(df2, direction = "long", varying = list(names(df2)[2]), v.names = "age_dependency_young", 
