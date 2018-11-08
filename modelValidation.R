@@ -20,10 +20,36 @@ sigma3 = output[9,1] # SD for mu3
 #    selected
 # }
 
+### Plot with ggplot instead
+library(ggplot2)
+
+mu1 <- beta1 + beta2*total_NA$age_dependency_old
+mu2 <- beta3 + beta4*total_NA$age_dependency_old
+mu3 <- beta5 + beta6*total_NA$age_dependency_old
+plotDf = data.frame(total_NA,mu1,mu2,mu3)
+
+ggplot(plotDf, aes(x=age_dependency_old,y=health_expenditure)) + geom_point() +
+    geom_line(data = plotDf, aes(x=age_dependency_old,y=mu1, colour="#000099"), show.legend = FALSE) +
+    geom_errorbar(aes(ymin=mu1-sigma1, ymax=mu1+sigma1), width=.1)
+ggsave('figures/Age_vs_HealthExpend.svg')
+
+ggplot(plotDf, aes(x=age_dependency_old,y=GDP)) + geom_point() +
+    geom_line(data = plotDf, aes(x=age_dependency_old,y=mu2, colour="#000099"), show.legend = FALSE) +
+    geom_errorbar(aes(ymin=mu2-sigma2, ymax=mu2+sigma2), width=.1)
+ggsave('figures/Age_vs_GDP-cap.svg')
+
+ggplot(plotDf, aes(x=age_dependency_old,y=age_dependency_young)) + geom_point() +
+    geom_line(data = plotDf, aes(x=age_dependency_old,y=mu3, colour="#000099"), show.legend = FALSE) +
+    geom_errorbar(aes(ymin=mu3-sigma3, ymax=mu3+sigma3), width=.1)
+ggsave('figures/Age_vs_AgeY.svg')
+
+## Plot using built-in plot
 png(filename="figures/Age_vs_HealthExpend.png")
 plot(total_NA$age_dependency_old,total_NA$health_expenditure,col='red')
 mu1 <- beta1 + beta2*total_NA$age_dependency_old
 lines(total_NA$age_dependency_old,mu1,col='green')
+# R doesn't have a built-in function to do standard deviations!
+arrows(total_NA$age_dependency_old, mu1-sigma1, total_NA$age_dependency_old, mu1+sigma1, length=0.05, angle=90, code=3)
 dev.off()
 
 png(filename="figures/Age_vs_GDP-cap.png")
